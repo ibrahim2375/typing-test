@@ -1,0 +1,15 @@
+:root {
+  --mainColor: white;
+  --seconColor: #4762ff;
+  --thirdColor: #f4f6fa;
+  --titleColor: black;
+  --textColor: #333333;
+  --genralRange: 100%;
+  --borderRadius:7px;
+  --padding: 60px;
+  --gap: 50px;
+  --logoWidth: 70px;
+  --logoHeight: 70px;
+  --btnWidth:100px;
+  --btnHeight:30px;
+}

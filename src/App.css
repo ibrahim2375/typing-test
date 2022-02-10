@@ -1,0 +1,64 @@
+@import url("./css/Variable.css");
+/* genral style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+/* Header style */
+.App header {
+  padding: 0 var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.App header .logo {
+  height: var(--genralRange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App header .logo > img {
+  width: var(--logoWidth);
+  height: var(--logoHeight);
+}
+/* links style */
+.App .links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+}
+.App .links ul li {
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+.App .links ul li:hover {
+  color: var(--seconColor);
+}
+.App .contactUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App .contactUs .btn-contact {
+  background-color: var(--seconColor);
+  color: var(--mainColor);
+  width: var(--btnWidth);
+  height: var(--btnHeight);
+  border-radius: var(--borderRadius);
+  -webkit-border-radius: var(--borderRadius);
+  -moz-border-radius: var(--borderRadius);
+  -ms-border-radius: var(--borderRadius);
+  -o-border-radius: var(--borderRadius);
+}
+.App .contactUs .btn-contact:hover {
+  background-color: var(--mainColor);
+  color: var(--seconColor);
+  cursor: pointer;
+}
