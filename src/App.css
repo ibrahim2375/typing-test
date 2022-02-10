@@ -8,6 +8,7 @@
   border: none;
   outline: none;
 }
+
 /* Header style */
 .App header {
   padding: 0 var(--padding);
@@ -27,22 +28,23 @@
   height: var(--logoHeight);
 }
 /* links style */
-.App .links ul {
+.App ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: var(--gap);
 }
-.App .links ul li {
+.App ul li {
   text-align: center;
   cursor: pointer;
   font-weight: bold;
+ 
 }
-.App .links ul li .link {
+.App ul li .link {
   text-decoration: none;
   color: var(--titleColor);
 }
-.App .links ul li .link:hover {
+.App ul li .link:hover {
   color: var(--seconColor);
 }
 .App .contactUs {
@@ -65,4 +67,52 @@
   background-color: var(--mainColor);
   color: var(--seconColor);
   cursor: pointer;
+}
+.App .menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .App header {
+    padding: 0 30px;
+  }
+  /* links style */
+  .App ul {
+    flex-direction: row;
+  }
+  .App .contactUs .btn-contact {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .App header {
+    position: relative;
+  }
+  .App ul {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: var(--mainColor);
+    right: 0px;
+    top: 73px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);;
+    border-radius: var(--borderRadius);
+    -webkit-border-radius: var(--borderRadius);
+    -moz-border-radius: var(--borderRadius);
+    -ms-border-radius: var(--borderRadius);
+    -o-border-radius: var(--borderRadius);
+  }
+  .App ul li {
+    padding: 20px;
+  }
+  .App .menu {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: calc(var(--logoHeight) / 2px);
+  }
+  /* .App .menu:hover + ul {
+    display: block;
+  } */
 }

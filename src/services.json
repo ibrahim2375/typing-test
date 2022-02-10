@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Learn Touch typing Online  .",
+    "description": "You will see improvement in a few weeks if you practice often.",
+    "img": "./img/services4.png"
+  },
+  {
+    "id": 2,
+    "title": "Proper hand posture guide.",
+    "description": "Will show you the correct hand posture on every key as you type.",
+    "img": "./img/services1.png"
+  },
+  {
+    "id": 3,
+    "title": "It's a game",
+    "description": "It's a game. An engaging and interactive experience while you are learning how to type.",
+    "img": "./img/services3.png"
+  },
+  {
+    "id": 4,
+    "title": "How do you type faster?",
+    "description": "To type faster, you need to learn how to position yourself correctly, use all your fingers, hit the right keys without looking and avoid making mistakes.",
+    "img": "./img/services2.png"
+  }
+]

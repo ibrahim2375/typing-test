@@ -1,0 +1,53 @@
+@import url("./Variable.css");
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  gap: 20px;
+  width: 600px;
+  background-color: var(--thirdColor);
+  border-radius: var(--borderRadius);
+}
+.block .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.block .text h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.block .text p {
+  font-size: 15px;
+  color: var(--textColor);
+  overflow: hidden;
+}
+.block .imgServices {
+  object-fit: center;
+  width: 250px;
+  height: 250px;
+}
+
+@media (max-width: 768px) {
+  .block {
+    width: 500px;
+  }
+  .block .text h2 {
+    font-size: 18px;
+  }
+  .block .imgServices {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media (max-width: 480px) {
+  .block {
+    width: 300px;
+  }
+  .block .text h2 {
+    font-size: 16px;
+  }
+}

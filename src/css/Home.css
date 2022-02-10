@@ -1,0 +1,124 @@
+@import url("./Variable.css");
+.container {
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+.home {
+  width: var(--genralRange);
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+/* text style */
+.home .landingInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+  width: 600px;
+}
+.home .landingInfo .title {
+  font-size: var(--titleSize);
+  font-weight: bold;
+  color: var(--titleColor);
+}
+.home .landingInfo .description {
+  color: var(--textColor);
+}
+/* btn style */
+.home .landingInfo .btn-start {
+  background-color: var(--seconColor);
+  color: var(--mainColor);
+  width: var(--btnWidthStart);
+  height: var(--btnHeightStart);
+  border-radius: var(--borderRadius);
+  -webkit-border-radius: var(--borderRadius);
+  -moz-border-radius: var(--borderRadius);
+  -ms-border-radius: var(--borderRadius);
+  -o-border-radius: var(--borderRadius);
+}
+.home .landingInfo .btn-start:hover {
+  background-color: var(--mainColor);
+  color: var(--seconColor);
+  cursor: pointer;
+}
+.home .landingImage > img {
+  object-fit: cover;
+}
+.container .services {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: var(--gap);
+}
+.services .blocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+  flex-wrap: wrap;
+}
+/* for mobile */
+@media (max-width: 1200px) {
+  .home .landingInfo .title {
+    font-size: 48px;
+  }
+  .container .home .landingImage > img {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (max-width: 1024px) {
+  .home .landingInfo .title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 860px) {
+  .home {
+    /* flex-direction: column; */
+    gap: var(--gap);
+  }
+  .home .landingInfo {
+    width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .home .landingInfo .title {
+    font-size: 24px;
+  }
+
+  .home .landingInfo {
+    width: 400px;
+  }
+  .container .home .landingImage > img {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .home .landingInfo .title {
+    font-size: 18px;
+  }
+  .home .landingInfo {
+    width: 300px;
+  }
+  .container .home .landingImage > img {
+    width: 300px;
+    height: 300px;
+  }
+}
