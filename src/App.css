@@ -38,7 +38,11 @@
   cursor: pointer;
   font-weight: bold;
 }
-.App .links ul li:hover {
+.App .links ul li .link {
+  text-decoration: none;
+  color: var(--titleColor);
+}
+.App .links ul li .link:hover {
   color: var(--seconColor);
 }
 .App .contactUs {
