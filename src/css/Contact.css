@@ -1,0 +1,83 @@
+@import url("./Variable.css");
+.contact {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* height: 1080px; */
+}
+.contact > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.contact form {
+  padding: var(--padding);
+  min-width: 300px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+  top: 50%;
+  left: 50%;
+  background-color: var(--mainColor);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: var(--borderRadius);
+}
+.contact form .txt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.contact form .txt h2 {
+  color: var(--seconColor);
+}
+.contact form .txt p {
+  color: var(--textColor);
+}
+.contact form .btn-send {
+  background-color: var(--seconColor);
+  color: var(--mainColor);
+  width: var(--btnWidthStart);
+  height: var(--btnHeightStart);
+  border-radius: var(--borderRadius);
+  -webkit-border-radius: var(--borderRadius);
+  -moz-border-radius: var(--borderRadius);
+  -ms-border-radius: var(--borderRadius);
+  -o-border-radius: var(--borderRadius);
+}
+.contact form .input {
+  width: 100%;
+  height: var(--inputHeight);
+  background-color: var(--inputs);
+}
+.contact form .message {
+  width: 100%;
+  padding-left: var(--paddingleft);
+  background-color: var(--inputs);
+  height: var(--inputAreaHeight);
+  border-radius: var(--borderRadius);
+}
+.contact form .btn-send:hover {
+  padding-left: var(--paddingleft);
+  background-color: var(--mainColor);
+  color: var(--seconColor);
+  cursor: pointer;
+  border-radius: var(--borderRadius);
+}
+/* for mobile */
+
+@media (max-width: 768px) {
+  .contact form {
+    padding: 30px;
+  }
+}
+@media (max-width: 480px) {
+}

@@ -4,16 +4,20 @@
   --thirdColor: #f4f6fa;
   --titleColor: black;
   --textColor: #9e9e9e;
-  --titleSize:64px;
+  --inputs: rgba(71, 98, 255, 0.08);
+  --inputHeight: 40px;
+  --inputAreaHeight: 60px;
+  --titleSize: 64px;
   --genralRange: 100%;
-  --borderRadius:7px;
+  --borderRadius: 7px;
   --padding: 60px;
   --gap: 50px;
   --logoWidth: 70px;
   --logoHeight: 70px;
-  --btnWidth:100px;
-  --btnHeight:30px;
-  --btnWidthStart:160px;
-  --btnHeightStart:40px;
-  --marginTop:100px;
+  --btnWidth: 100px;
+  --btnHeight: 30px;
+  --btnWidthStart: 160px;
+  --btnHeightStart: 40px;
+  --marginTop: 100px;
+  --paddingleft:10px;
 }

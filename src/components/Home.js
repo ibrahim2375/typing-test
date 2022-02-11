@@ -7,6 +7,7 @@ import img2 from '../img/services2.png';
 import img3 from '../img/services3.png';
 import img4 from '../img/services4.png';
 import Test from './Test';
+import Contact from './Contact'
 function Home() {
     const [data, setdata] = useState([
         {
@@ -36,49 +37,52 @@ function Home() {
     ])
 
     return (
-        <div className="container">
-            <div className="home">
-                <div className="landingInfo">
-                    <p className="title">Are you still typing
-                        with two fingers ?</p>
-                    <p className="description">
-                        test your speed and accuracy using our free
-                        typing test. Use your results to see how far
-                        a proper typing method could take you!
-                    </p>
-                    <button className="btn-start">Start From Here</button>
+        <>
+            <div className="container">
+                <div className="home">
+                    <div className="landingInfo">
+                        <p className="title">Are you still typing
+                            with two fingers ?</p>
+                        <p className="description">
+                            test your speed and accuracy using our free
+                            typing test. Use your results to see how far
+                            a proper typing method could take you!
+                        </p>
+                        <button className="btn-start">Start From Here</button>
+                    </div>
+                    <div className="landingImage">
+                        <img src={Landing} alt="LandingImage" />
+                    </div>
                 </div>
-                <div className="landingImage">
-                    <img src={Landing} alt="LandingImage" />
+                <div className="services">
+                    <div className="head">
+                        <h1>App Services</h1>
+                    </div>
+                    <div className="blocks">
+                        {
+                            data.map((d) => {
+
+                                return (
+                                    <>
+                                        <Services key={d.id} title={d.title} description={d.description} img={d.img} />
+                                    </>
+                                )
+                            })
+                            // })
+                        }
+
+
+                    </div>
+                </div>
+                <div className="typing">
+                    <h1 style={{ textAlign: 'center' }}>Test Typing</h1>
+                    <div className="typingTest">
+                        <Test />
+                    </div>
                 </div>
             </div>
-            <div className="services">
-                <div className="head">
-                    <h1>App Services</h1>
-                </div>
-                <div className="blocks">
-                    {
-                        data.map((d) => {
-
-                            return (
-                                <>
-                                    <Services key={d.id} title={d.title} description={d.description} img={d.img} />
-                                </>
-                            )
-                        })
-                        // })
-                    }
-
-
-                </div>
-            </div>
-            <div className="typing">
-                <h1 style={{ textAlign: 'center' }}>Test Typing</h1>
-                <div className="typingTest">
-                    <Test />
-                </div>
-            </div>
-        </div>
+            <Contact />
+        </>
     )
 }
 
