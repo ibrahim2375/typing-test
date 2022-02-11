@@ -50,7 +50,7 @@ function Test() {
     }
     useEffect(() => {
         renderNewQuote()
-        inputRef.current.focus();
+        // inputRef.current.focus();
     })
     return (
         <div className="test">
