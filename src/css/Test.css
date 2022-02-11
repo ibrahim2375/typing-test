@@ -11,6 +11,13 @@
   border-radius: var(--borderRadius);
   padding: var(--padding);
 }
+
+.test .changeIcon {
+  color: var(--seconColor);
+}
+.test .changeIcon:hover {
+  color: var(--titleColor);
+}
 .test .display-quote {
   padding: 20px;
   font-size: 20px;

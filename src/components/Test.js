@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import '../css/Test.css';
+import ChangeCircleIcon from '@mui/icons-material/ChangeCircle';
 function Test() {
     const FETC_HAPI = 'http://api.quotable.io/random';
     const displayQuote = useRef();
@@ -44,13 +45,16 @@ function Test() {
         inputRef.current.value = null;
 
     }
+    const update = () => {
+        renderNewQuote();
+    }
     useEffect(() => {
         renderNewQuote()
         inputRef.current.focus();
     })
     return (
         <div className="test">
-            <h1 style={{ textAlign: 'center' }}>Let's GO 🚀</h1>
+            <ChangeCircleIcon fontSize='large' className="changeIcon" onClick={update} />
             <div className="display-quote" ref={displayQuote}></div>
             <textarea
                 name="text"
