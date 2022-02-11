@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import '../css/Footer.css'
 import footerLogo from '../img/logo.png';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
@@ -18,7 +18,7 @@ function Footer() {
                             <div className="list" key={data.id}>
                                 <div><MailOutlineIcon className="icon" /> <p>{data.mail}</p></div>
                                 <div><TelegramIcon className="icon" /><p>{data.telegram}</p></div>
-                                <div><WhatsAppIcon className="icon" /><p>{data.website}</p></div>
+                                <div><WhatsAppIcon className="icon" /><p>{data.whatsapp}</p></div>
                                 <div><LanguageIcon className="icon" /><a href={data.website} >webSite</a></div>
                             </div>
                         )

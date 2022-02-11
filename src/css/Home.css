@@ -81,6 +81,19 @@
   width: 100%;
   padding: 40px;
 }
+
+.fadeIn {
+  animation: fadeIn 3s ease-in 1;
+  -webkit-animation: fadeIn 3s ease-in 1;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* for mobile */
 @media (max-width: 1200px) {
   .home .landingInfo .title {

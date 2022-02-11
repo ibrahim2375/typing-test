@@ -1,4 +1,4 @@
-import React, { useEffect, useRef} from 'react'
+import React, { useEffect, useRef } from 'react'
 import '../css/Test.css';
 import ChangeCircleIcon from '@mui/icons-material/ChangeCircle';
 function Test() {
@@ -51,11 +51,11 @@ function Test() {
     }
 
     // function startTimeing() {
-        // timer.current.innerText = 0;
-        // startTime = new Date();
-        // setInterval(() => {
-        //     goda = getTimer();
-        // }, 1000)
+    // timer.current.innerText = 0;
+    // startTime = new Date();
+    // setInterval(() => {
+    //     goda = getTimer();
+    // }, 1000)
     //     setInterval(() => {
     //         let num = 0;
     //         num++;
@@ -70,9 +70,12 @@ function Test() {
         renderNewQuote();
 
     }
+    const handleChange = (e) => {
+        e.preventDefault();
+    }
     useEffect(() => {
         renderNewQuote();
-        
+
         // inputRef.current.focus();
     })
     return (
@@ -84,6 +87,9 @@ function Test() {
                 name="text"
                 ref={inputRef}
                 onInput={changes}
+                onCopy={handleChange}
+                onPaste={handleChange}
+
             ></textarea>
         </div>
     )

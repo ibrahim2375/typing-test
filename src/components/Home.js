@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import '../css/Home.css';
 import Landing from '../img/Home landing.png'
 import Services from './Services';
@@ -11,8 +11,10 @@ import Contact from './Contact'
 import Footer from './Footer'
 import { Typewriter } from 'react-simple-typewriter';
 
-function Home() {
 
+function Home() {
+    const block = useRef();
+    const [state, setState] = useState(false);
     const data = [
         {
             i: 1697,
@@ -39,8 +41,13 @@ function Home() {
             img: img4
         }
     ]
-
-
+    useEffect(() => {
+        window.addEventListener('scroll', (e) => {
+            if (window.scrollY >= 480) {
+                setState(true);
+            }
+        })
+    }, [])
     return (
         <>
             <div className="container">
@@ -62,7 +69,7 @@ function Home() {
                     <div className="head">
                         <h1>App Services</h1>
                     </div>
-                    <div className="blocks" >
+                    <div className={`blocks ${state ? 'fadeIn' : ''}`} ref={block} >
                         {
                             data.map((d, i) => {
 
