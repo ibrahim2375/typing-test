@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import '../css/Home.css';
 import Landing from '../img/Home landing.png'
 import Services from './Services';
@@ -40,9 +40,7 @@ function Home() {
         }
     ]
 
-    useEffect(() => {
-        // typing()
-    })
+
     return (
         <>
             <div className="container">
@@ -64,20 +62,21 @@ function Home() {
                     <div className="head">
                         <h1>App Services</h1>
                     </div>
-
+                    <div className="blocks" >
                         {
-                            data.map((d,i) => {
+                            data.map((d, i) => {
 
-                                return <div className="blocks" key={i}>
+                                return (
+                                    <div key={i}>
                                         <Services key={i} title={d.title} description={d.description} img={d.img} />
                                     </div>
-                                
+                                )
+
                             })
-                            
+
                         }
+                    </div>
 
-
-                   
                 </div>
                 <div className="typing" id="typing">
                     <h1 style={{ textAlign: 'center' }}>Test Typing</h1>
