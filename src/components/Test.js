@@ -1,10 +1,13 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef} from 'react'
 import '../css/Test.css';
 import ChangeCircleIcon from '@mui/icons-material/ChangeCircle';
 function Test() {
     const FETC_HAPI = 'http://api.quotable.io/random';
     const displayQuote = useRef();
     const inputRef = useRef();
+    const timer = useRef();
+    let startTime;
+    // const [counter, setCounter] = useState(0);
     const changes = () => {
         const arrayQuote = displayQuote.current.querySelectorAll('span');
         const arrayValue = inputRef.current.value.split('');
@@ -43,17 +46,39 @@ function Test() {
 
         })
         inputRef.current.value = null;
+        // startTimeing();
+        // startTimeing();
 
     }
+
+    // function startTimeing() {
+        // timer.current.innerText = 0;
+        // startTime = new Date();
+        // setInterval(() => {
+        //     goda = getTimer();
+        // }, 1000)
+    //     setInterval(() => {
+    //         let num = 0;
+    //         num++;
+    //         setCounter(num);
+    //     },1000)
+    // }
+    // function getTimer() {
+    //     // timer.current.value = 0;
+    //     return Math.floor((new Date() - startTime) / 1000);
+    // }
     const update = () => {
         renderNewQuote();
+
     }
     useEffect(() => {
-        renderNewQuote()
+        renderNewQuote();
+        
         // inputRef.current.focus();
     })
     return (
         <div className="test">
+            <div className="timer" ref={timer} >0</div>
             <ChangeCircleIcon fontSize='large' className="changeIcon" onClick={update} />
             <div className="display-quote" ref={displayQuote}></div>
             <textarea

@@ -1,5 +1,6 @@
 @import url("./Variable.css");
 .test {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +12,22 @@
   border-radius: var(--borderRadius);
   padding: var(--padding);
 }
-
+.test .timer {
+  display: none;
+  position: absolute;
+  top: var(--padding);
+  right: var(--padding);
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--correctColor);
+ 
+}
+/* .test .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+} */
 .test .changeIcon {
   color: var(--seconColor);
 }
@@ -37,10 +53,10 @@
   border-radius: var(--borderRadius);
 }
 .correct {
-  color: green;
+  color: var(--correctColor);
 }
 .incorrect {
-  color: red;
+  color: var(--incorrectColor);
   /* text-decoration: underline; */
 }
 /* for mobile */

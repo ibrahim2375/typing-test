@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,23 +10,23 @@ import logo from './img/logo.png';
 import Home from './components/Home.js';
 import Typing from './components/TypingTest';
 import About from './components/About';
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 function App() {
   const divRef = useRef(null);
-  const showList = () => {
-    if (window.innerWidth <= 480) {
-      divRef.current.style.display === 'block' ? divRef.current.style.display = 'none' : divRef.current.style.display = 'block';
-    }
-  }
-  useEffect(() => {
-    if (window.innerWidth <= 480) {
-      window.onscroll = () => {
-        divRef.current.style.display = 'none';
-      }
+  // const showList = () => {
+  // if (window.innerWidth <= 480) {
+  //   divRef.current.style.display === 'block' ? divRef.current.style.display = 'none' : divRef.current.style.display = 'block';
+  // }
+  // }
+  // useEffect(() => {
+  //   if (window.innerWidth <= 480) {
+  //     window.onscroll = () => {
+  //       divRef.current.style.display = 'none';
+  //     }
 
-    }
+  //   }
 
-  }, [])
+  // }, [])
 
   return (
     <div className="App" >
@@ -35,11 +35,10 @@ function App() {
           <div className="logo">
             <img src={logo} alt="Logo" name="logo" />
           </div>
-          <MenuIcon className="menu" onClick={showList} />
+          {/* <MenuIcon className="menu" onClick={showList} /> */}
           <ul ref={divRef} >
             <li><Link to="/" className="link">Home</Link></li>
             <li><Link to="/typing" className="link">Typing Test</Link></li>
-            <li>Contact Us</li>
             <li><Link to="/about" className="link">About</Link></li>
           </ul>
           <div className="contactUs">

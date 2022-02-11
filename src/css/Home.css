@@ -49,8 +49,9 @@
   color: var(--seconColor);
   cursor: pointer;
 }
-.home .landingImage > img {
+.home .landingImage img {
   object-fit: cover;
+  width: 100%;
 }
 .container .services {
   width: 100%;
@@ -85,10 +86,6 @@
   .home .landingInfo .title {
     font-size: 48px;
   }
-  .container .home .landingImage > img {
-    width: 500px;
-    height: 300px;
-  }
 }
 @media (max-width: 1024px) {
   .home .landingInfo .title {
@@ -116,15 +113,12 @@
   .home .landingInfo {
     width: 400px;
   }
-  .container .home .landingImage > img {
-    width: 400px;
-    height: 300px;
-  }
 }
 @media (max-width: 480px) {
   .container {
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: var(--marginTop);
   }
   .home .landingInfo .title {
     font-size: 18px;
@@ -132,8 +126,7 @@
   .home .landingInfo {
     width: 300px;
   }
-  .container .home .landingImage > img {
-    width: 300px;
-    height: 300px;
+  .container .home .landingImage img {
+    width: 100%;
   }
 }

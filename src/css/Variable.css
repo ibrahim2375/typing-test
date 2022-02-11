@@ -6,6 +6,8 @@
   --textColor: #9e9e9e;
   --inputs: rgba(71, 98, 255, 0.08);
   --footerColor: #1a1a1a;
+  --correctColor:green;
+  --incorrectColor:red;
   --inputHeight: 40px;
   --inputAreaHeight: 60px;
   --titleSize: 64px;
@@ -19,6 +21,6 @@
   --btnHeight: 30px;
   --btnWidthStart: 160px;
   --btnHeightStart: 40px;
-  --marginTop: 100px;
+  --marginTop: 70px;
   --paddingleft: 10px;
 }

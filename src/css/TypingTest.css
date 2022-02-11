@@ -1,0 +1,14 @@
+@import url("./Variable.css");
+.typingTest {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--gap);
+}
+@media (max-width: 480px) {
+  .typingTest {
+    margin-top: 100px;
+  }
+}
