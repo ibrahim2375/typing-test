@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../css/Home.css';
 import Landing from '../img/Home landing.png'
 import Services from './Services';
@@ -8,8 +8,9 @@ import img3 from '../img/services3.png';
 import img4 from '../img/services4.png';
 import Test from './Test';
 import Contact from './Contact'
+import Footer from './Footer'
 function Home() {
-    const [data, setdata] = useState([
+    const data = [
         {
             id: 1,
             title: "Learn Touch typing Online  .",
@@ -34,7 +35,7 @@ function Home() {
             description: "To type faster, you need to learn how to position yourself correctly, use all your fingers, hit the right keys without looking and avoid making mistakes.",
             img: img4
         }
-    ])
+    ]
 
     return (
         <>
@@ -48,7 +49,7 @@ function Home() {
                             typing test. Use your results to see how far
                             a proper typing method could take you!
                         </p>
-                        <button className="btn-start">Start From Here</button>
+                        <a href="#typing" className="btn-start">Start From Here</a>
                     </div>
                     <div className="landingImage">
                         <img src={Landing} alt="LandingImage" />
@@ -74,7 +75,7 @@ function Home() {
 
                     </div>
                 </div>
-                <div className="typing">
+                <div className="typing" id="typing">
                     <h1 style={{ textAlign: 'center' }}>Test Typing</h1>
                     <div className="typingTest">
                         <Test />
@@ -82,6 +83,7 @@ function Home() {
                 </div>
             </div>
             <Contact />
+            <Footer />
         </>
     )
 }

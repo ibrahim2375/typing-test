@@ -46,7 +46,7 @@ function Contact() {
     }
 
     return (
-        <div className="contact">
+        <div className="contact" id="mail">
             <img src={backgroundImage} alt="background" />
             <form>
                 <div className="txt">

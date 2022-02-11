@@ -1,0 +1,79 @@
+@import url("./Variable.css");
+footer {
+
+  width: 100%;
+  padding: var(--padding);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 200px;
+  background-color: var(--footerColor);
+}
+footer .footerHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+footer .footerHead > img {
+  object-fit: cover;
+}
+
+footer .siteInfo .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--gap);
+}
+footer .footerHead .list div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--mainColor);
+  gap: 10px;
+}
+footer .footerHead .list div .icon {
+  color: var(--seconColor);
+}
+footer .siteServices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+footer .siteServices .servicesTitle p {
+  font-weight: bold;
+  color: var(--mainColor);
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .siteServices .servicesTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--gap);
+}
+footer .siteServices .btn-cont {
+  background-color: var(--seconColor);
+  color: var(--mainColor);
+  width: var(--btnWidthStart);
+  height: var(--btnHeightStart);
+  border-radius: var(--borderRadius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .siteServices .btn-cont:hover {
+  background-color: var(--mainColor);
+  color: var(--seconColor);
+  cursor: pointer;
+}
