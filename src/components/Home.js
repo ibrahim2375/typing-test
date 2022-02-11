@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../css/Home.css';
 import Landing from '../img/Home landing.png'
 import Services from './Services';
@@ -9,7 +9,10 @@ import img4 from '../img/services4.png';
 import Test from './Test';
 import Contact from './Contact'
 import Footer from './Footer'
+import { Typewriter } from 'react-simple-typewriter';
+// import 'react-simple-typewriter/dist';
 function Home() {
+
     const data = [
         {
             id: 1,
@@ -37,13 +40,15 @@ function Home() {
         }
     ]
 
+    useEffect(() => {
+        // typing()
+    })
     return (
         <>
             <div className="container">
                 <div className="home">
                     <div className="landingInfo">
-                        <p className="title">Are you still typing
-                            with two fingers ?</p>
+                        <div className="title"><Typewriter loop cursor cursorStyle='_' typeSpeed={200} delaySpeed={500} words={["Are you still typing ", "with two fingers ?"]} />  </div>
                         <p className="description">
                             test your speed and accuracy using our free
                             typing test. Use your results to see how far
