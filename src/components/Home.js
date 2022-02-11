@@ -6,7 +6,7 @@ import img1 from '../img/services1.png';
 import img2 from '../img/services2.png';
 import img3 from '../img/services3.png';
 import img4 from '../img/services4.png';
-
+import Test from './Test';
 function Home() {
     const [data, setdata] = useState([
         {
@@ -75,7 +75,7 @@ function Home() {
             <div className="typing">
                 <h1 style={{ textAlign: 'center' }}>Test Typing</h1>
                 <div className="typingTest">
-
+                    <Test />
                 </div>
             </div>
         </div>
