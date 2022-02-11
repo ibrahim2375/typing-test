@@ -6,8 +6,7 @@ function Test() {
     const displayQuote = useRef();
     const inputRef = useRef();
     const timer = useRef();
-    let startTime;
-    // const [counter, setCounter] = useState(0);
+    // let startTime;
     const changes = () => {
         const arrayQuote = displayQuote.current.querySelectorAll('span');
         const arrayValue = inputRef.current.value.split('');

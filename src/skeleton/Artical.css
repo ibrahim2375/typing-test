@@ -1,0 +1,41 @@
+@import url("../css//Variable.css");
+.artical {
+  /* max-width: 100vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.artical .img1,
+.artical .img2 {
+  position: relative;
+  width: 266px;
+  height: 399px;
+  border-radius: var(--borderRadius);
+  background-color: #6666;
+}
+.animated {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  opacity: 0.6;
+  background-color: rgb(255, 255, 255);
+  animation: sk .9s linear infinite alternate;
+  -webkit-animation: sk .9s linear infinite alternate;
+}
+@keyframes sk {
+  0% {
+    transform: translateX(-150%);
+  }
+  50% {
+    /* transform: skewX(90deg); */
+    transform: translateX(50%);
+  }
+  100% {
+    /* transform: skewX(50deg); */
+    transform: translateX(150%);
+  }
+}

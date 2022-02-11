@@ -57,16 +57,18 @@
   width: 100%;
   height: var(--inputHeight);
   background-color: var(--inputs);
+  border-radius: var(--borderRadius);
+  padding-left: var(--paddingleft);
 }
 .contact form .message {
   width: 100%;
   padding-left: var(--paddingleft);
+  padding-top: var(--paddingleft);
   background-color: var(--inputs);
   height: var(--inputAreaHeight);
   border-radius: var(--borderRadius);
 }
 .contact form .btn-send:hover {
-  padding-left: var(--paddingleft);
   background-color: var(--mainColor);
   color: var(--seconColor);
   cursor: pointer;

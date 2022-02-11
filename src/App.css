@@ -12,6 +12,22 @@
 html {
   scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #aaaaaa;
+  border-radius: var(--borderRadius);
+  -webkit-border-radius: var(--borderRadius);
+  -moz-border-radius: var(--borderRadius);
+  -ms-border-radius: var(--borderRadius);
+  -o-border-radius: var(--borderRadius);
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
+/* end of genral style */
+/* ............................................................. */
 /* Header style */
 .App header {
   padding: 0 var(--padding);
@@ -57,6 +73,9 @@ html {
   align-items: center;
 }
 .App .contactUs .btn-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--seconColor);
   color: var(--mainColor);
   width: var(--btnWidth);

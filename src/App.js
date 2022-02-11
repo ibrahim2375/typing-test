@@ -10,6 +10,7 @@ import logo from './img/logo.png';
 import Home from './components/Home.js';
 import Typing from './components/TypingTest';
 import About from './components/About';
+import ContactPage from './components/ContactPopUp';
 // import MenuIcon from '@mui/icons-material/Menu';
 function App() {
   const divRef = useRef(null);
@@ -42,13 +43,14 @@ function App() {
             <li><Link to="/about" className="link">About</Link></li>
           </ul>
           <div className="contactUs">
-            <button className="btn-contact">Contact Us</button>
+            <Link to="/contact" className="btn-contact">Contact Us</Link>
           </div>
         </header>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route path="/typing" element={<Typing />}></Route>
           <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<ContactPage />}></Route>
         </Routes>
       </Router>
     </div>

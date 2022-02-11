@@ -53,7 +53,7 @@ function Contact() {
                     <h2>Contact Us 🤖</h2>
                     <p>it’s to get any help you need it in our site...</p>
                 </div>
-                <input className="input" type="email" name="email" placeholder="email" ref={email} />
+                <input className="input" type="email" name="email" placeholder="  email" ref={email} />
                 <textarea className="message" name="message" placeholder="message" ref={message}></textarea>
                 <button className="btn-send" onClick={checkValidaty}> Send</button>
 

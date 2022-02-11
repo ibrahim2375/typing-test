@@ -10,7 +10,7 @@ import Test from './Test';
 import Contact from './Contact'
 import Footer from './Footer'
 import { Typewriter } from 'react-simple-typewriter';
-// import 'react-simple-typewriter/dist';
+
 function Home() {
 
     const data = [
