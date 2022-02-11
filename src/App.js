@@ -13,7 +13,8 @@ import About from './components/About';
 import ContactPage from './components/ContactPopUp';
 // import MenuIcon from '@mui/icons-material/Menu';
 function App() {
-  const divRef = useRef(null);
+  const divRef = useRef();
+  // const links = useRef();
   // const showList = () => {
   // if (window.innerWidth <= 480) {
   //   divRef.current.style.display === 'block' ? divRef.current.style.display = 'none' : divRef.current.style.display = 'block';
@@ -28,7 +29,13 @@ function App() {
   //   }
 
   // }, [])
-
+  // function check() {
+  //   links.current.foreach(function (link) {
+  //     link.onClick(() => {
+  //       link.style.color = 'red';
+  //     })
+  //   })
+  // }
   return (
     <div className="App" >
       <Router>
@@ -37,8 +44,8 @@ function App() {
             <img src={logo} alt="Logo" name="logo" />
           </div>
           {/* <MenuIcon className="menu" onClick={showList} /> */}
-          <ul ref={divRef} >
-            <li><Link to="/" className="link">Home</Link></li>
+          <ul ref={divRef}>
+            <li><Link to="/" className="link" >Home</Link></li>
             <li><Link to="/typing" className="link">Typing Test</Link></li>
             <li><Link to="/about" className="link">About</Link></li>
           </ul>

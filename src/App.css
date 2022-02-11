@@ -67,6 +67,10 @@ body::-webkit-scrollbar-thumb:hover {
 .App ul li .link:hover {
   color: var(--seconColor);
 }
+/* .App ul li .link:link, */
+/* .App ul li .link::visited{
+  color: var(--seconColor);
+} */
 .App .contactUs {
   display: flex;
   justify-content: center;

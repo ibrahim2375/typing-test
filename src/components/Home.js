@@ -15,25 +15,25 @@ function Home() {
 
     const data = [
         {
-            id: 1,
+            i: 1697,
             title: "Learn Touch typing Online  .",
             description: "You will see improvement in a few weeks if you practice often.",
             img: img1
         },
         {
-            id: 2,
+            i: 2732,
             title: "Proper hand posture guide.",
             description: "Will show you the correct hand posture on every key as you type.",
             img: img2
         },
         {
-            id: 3,
+            i: 32895,
             title: "It's a game",
             description: "It's a game. An engaging and interactive experience while you are learning how to type.",
             img: img3
         },
         {
-            id: 4,
+            i: 525154,
             title: "How do you type faster?",
             description: "To type faster, you need to learn how to position yourself correctly, use all your fingers, hit the right keys without looking and avoid making mistakes.",
             img: img4
@@ -64,21 +64,20 @@ function Home() {
                     <div className="head">
                         <h1>App Services</h1>
                     </div>
-                    <div className="blocks">
-                        {
-                            data.map((d) => {
 
-                                return (
-                                    <>
-                                        <Services key={d.id} title={d.title} description={d.description} img={d.img} />
-                                    </>
-                                )
+                        {
+                            data.map((d,i) => {
+
+                                return <div className="blocks" key={i}>
+                                        <Services key={i} title={d.title} description={d.description} img={d.img} />
+                                    </div>
+                                
                             })
-                            // })
+                            
                         }
 
 
-                    </div>
+                   
                 </div>
                 <div className="typing" id="typing">
                     <h1 style={{ textAlign: 'center' }}>Test Typing</h1>
